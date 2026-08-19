@@ -1,3 +1,4 @@
+const nodeFetch = require('node-fetch');
 const { getDb, queryAll, queryOne, runSql, saveDb } = require('../db');
 
 const BSE_BASE_URL = process.env.BSE_API_URL || 'https://bse-api-njul.onrender.com';
@@ -8,7 +9,7 @@ async function fetchWithTimeout(url, timeoutMs = 30000) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeoutMs);
     try {
-        const res = await fetch(url, { signal: controller.signal });
+        const res = await nodeFetch(url, { signal: controller.signal });
         if (!res.ok) {
             const text = await res.text();
             throw new Error(`HTTP ${res.status}: ${text}`);
