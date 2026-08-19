@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('http');
 const cors = require('cors');
 const { Server } = require('socket.io');
-const { initDb, queryAll, queryOne } = require('./db');
+const { initDb, queryAll, queryOne, runSql, saveDb } = require('./db');
 const { syncInternal } = require('./services/bseSync');
 const clientsRouter = require('./routes/clients');
 const tradesRouter = require('./routes/trades');
@@ -98,7 +98,8 @@ app.get('/api/debug/quicksync', async (req, res) => {
         }
         saveDb();
         const count = queryOne('SELECT COUNT(*) as c FROM employees')?.c || 0;
-        res.json({ status: 'ok', synced: data.data.length, dbCount: count });
+        const all = queryAll('SELECT employeeId, name, role, designation, department FROM employees ORDER BY name');
+        res.json({ status: 'ok', synced: data.data.length, dbCount: count, queryAllCount: all.length, firstEmp: all[0] || null });
     } catch (err) {
         res.json({ status: 'error', error: err.message, stack: err.stack });
     }
