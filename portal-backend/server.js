@@ -13,9 +13,13 @@ const { syncRouter, setIo } = require('./routes/sync');
 const app = express();
 const server = http.createServer(app);
 
-const allowedOrigins = process.env.FRONTEND_URL
-    ? [process.env.FRONTEND_URL, 'http://localhost:5173', 'http://localhost:5174']
-    : ['http://localhost:5173', 'http://localhost:5174', 'http://127.0.0.1:5173'];
+const allowedOrigins = [
+    'https://portal-frontend-neon-three.vercel.app',
+    process.env.FRONTEND_URL,
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'http://127.0.0.1:5173'
+].filter(Boolean);
 
 const io = new Server(server, {
     cors: {
