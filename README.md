@@ -1,168 +1,337 @@
-# Arham Fintech — Internal Operations Portal
+# 🏦 Arham Fintech — Internal Operations Portal
 
-> Technical Assessment — Stock Broking Internal Operations Portal with Mock BSE API
+> **Technical Assessment** · Stock Broking Internal Operations Portal with Mock BSE API Simulator
 
-## Quick Start
+<div align="center">
 
-### Prerequisites
-- **Node.js** v18+ installed
-- **npm** v8+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/VishalPandey31/BSE-API)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev)
+[![SQLite](https://img.shields.io/badge/SQLite-Cache-003B57?logo=sqlite&logoColor=white)](https://sql.js.org)
+[![Socket.io](https://img.shields.io/badge/Socket.io-Realtime-010101?logo=socket.io)](https://socket.io)
 
-### 1. Clone & Setup
+</div>
 
-```bash
-git clone <repository-url>
-cd ArhanFintech_Assignment
+---
+
+## 📋 Table of Contents
+
+- [Overview](#-overview)
+- [Architecture](#-architecture)
+- [Quick Start](#-quick-start)
+- [Project Structure](#-project-structure)
+- [Part A — Mock BSE API](#-part-a--mock-bse-api)
+- [Part B — Internal Portal](#-part-b--internal-portal)
+- [Deployment](#-deployment)
+- [Design Decisions](#-design-decisions)
+- [Scaling to 100×](#-scaling-to-100-data-volume)
+
+---
+
+## 🎯 Overview
+
+This project implements a **fully functional internal operations portal** for a stock broking firm with two major components:
+
+| Component | Description | Stack |
+|-----------|-------------|-------|
+| **Part A** — Mock BSE API | Simulates a slow, unreliable BSE Exchange API | Node.js, Express |
+| **Part B** — Internal Portal | Dashboard for clients, trades, employees, incentives | React, Express, SQLite, Socket.io |
+
+### Key Highlights
+
+- ⚡ **< 1 second page loads** — Cache-first architecture serves from SQLite, even when BSE is down
+- 🔄 **Real-time updates** — Socket.io pushes live data without page refresh
+- 🔁 **Smart retry** — Exponential backoff handles BSE's ~20% failure rate
+- 📊 **5 role-based views** — Clients, Trades, My Clients, Employees, Incentives
+- 🚫 **No cronjob** — Data sync is user-triggered, on-demand
+
+---
+
+## 🏗 Architecture
+
+```
+┌──────────────────────────────────────────────────────────┐
+│                    React Frontend (:5173)                 │
+│   Clients │ Trades │ My Clients │ Employees │ Incentives │
+│          REST API ▼              WebSocket ▼              │
+└──────────────────────────────────────────────────────────┘
+                        │                │
+┌───────────────────────▼────────────────▼─────────────────┐
+│              Portal Backend (:3001)                       │
+│  ┌──────────────┐  ┌───────────────┐  ┌───────────────┐  │
+│  │  REST Routes  │  │  Sync Service  │  │  Socket.io    │  │
+│  │  (instant)    │  │  (background)  │  │  (push)       │  │
+│  └──────┬───────┘  └──────┬────────┘  └───────────────┘  │
+│         │                 │                               │
+│         ▼                 ▼                               │
+│  ┌─────────────┐  ┌─────────────────────────────────┐    │
+│  │ SQLite Cache │  │ Mock BSE API (:4000)             │    │
+│  │ (sub-ms read)│  │ Slow (2s-10min) + 20% failures  │    │
+│  └─────────────┘  └─────────────────────────────────┘    │
+└──────────────────────────────────────────────────────────┘
 ```
 
-### 2. Start Mock BSE API (Part A)
+**Data Flow:**
+1. User opens page → Backend reads from **SQLite cache** instantly (< 50ms)
+2. User clicks "Sync from BSE" → Backend fetches from BSE in **background**
+3. Each page retried up to **5 times** with exponential backoff
+4. New data upserted into SQLite → **Socket.io** pushes `data-updated` event
+5. Frontend **auto-refreshes** without page reload
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- **Node.js** v18+ and **npm** v8+
+
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/VishalPandey31/BSE-API.git
+cd BSE-API
+```
+
+### 2. Start Mock BSE API (Terminal 1)
 
 ```bash
 cd mock-bse-api
 npm install
-npm run seed      # Generate seed data (250 clients, 5000 trades, 20 employees)
-npm start         # Starts on http://localhost:4000
+npm run seed
+npm start
+# ✅ Running on http://localhost:4000
 ```
 
-### 3. Start Portal Backend (Part B — Backend)
+### 3. Start Portal Backend (Terminal 2)
 
 ```bash
 cd portal-backend
 npm install
-npm start         # Starts on http://localhost:3001
+npm start
+# ✅ Running on http://localhost:3001
 ```
 
-The backend automatically syncs employee & mapping data from the Mock BSE API on startup.
-
-### 4. Start Portal Frontend (Part B — Frontend)
+### 4. Start Portal Frontend (Terminal 3)
 
 ```bash
 cd portal-frontend
 npm install
-npm run dev       # Starts on http://localhost:5173
+npm run dev
+# ✅ Running on http://localhost:5173
 ```
 
 ### 5. Use the Portal
 
-1. Open **http://localhost:5173** in your browser
-2. Select an employee profile to log in (simulated auth)
-3. Click **"Sync from BSE"** to pull client & trade data from the Mock BSE API
-4. Navigate through all 5 views: Clients, Trades, My Clients, Employees, Incentives
+1. Open **http://localhost:5173**
+2. Select an employee profile → Login
+3. Click **🔄 Sync from BSE** to pull data
+4. Navigate through all 5 views
 
 ---
 
-## Links
-
-| Service | URL |
-|---------|-----|
-| Mock BSE API | http://localhost:4000 |
-| Portal Backend | http://localhost:3001 |
-| Internal Dashboard | http://localhost:5173 |
-
----
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-ArhanFintech_Assignment/
-├── mock-bse-api/          # Part A — Mock BSE Exchange API
-│   ├── server.js          # Express server with simulated delay & failures
-│   ├── seed.js            # Generates fake client/trade/employee data
-│   └── data/              # Seed data JSON files
+BSE-API/
+├── mock-bse-api/                  # Part A — Mock Exchange Simulator
+│   ├── server.js                  # Express server (delay + failure simulation)
+│   ├── seed.js                    # Data generator (250 clients, 5000 trades)
+│   ├── package.json
+│   └── data/                      # Generated seed JSON files
 │
-├── portal-backend/        # Part B — Portal Backend
-│   ├── server.js          # Express + Socket.io server
-│   ├── db.js              # SQLite database (sql.js)
+├── portal-backend/                # Part B — Backend
+│   ├── server.js                  # Express + Socket.io server
+│   ├── db.js                      # SQLite database (sql.js)
 │   ├── services/
-│   │   └── bseSync.js     # On-demand BSE sync with retry & deduplication
-│   └── routes/
-│       ├── clients.js     # Client endpoints
-│       ├── trades.js      # Trade endpoints (filterable)
-│       ├── employees.js   # Employee + My Clients endpoints
-│       ├── incentives.js  # Incentive calculation
-│       └── sync.js        # Sync trigger & status
+│   │   └── bseSync.js             # On-demand sync with retry logic
+│   ├── routes/
+│   │   ├── clients.js             # Client endpoints (search, filter, paginate)
+│   │   ├── trades.js              # Trade endpoints (multi-filter)
+│   │   ├── employees.js           # Employee + My Clients endpoints
+│   │   ├── incentives.js          # Incentive calculation engine
+│   │   └── sync.js                # Sync trigger + status
+│   └── package.json
 │
-├── portal-frontend/       # Part B — Portal Frontend
-│   └── src/
-│       ├── App.jsx        # Main app with sidebar, routing, sync bar
-│       ├── api.js         # API client
-│       ├── socket.js      # Socket.io client for real-time updates
-│       └── pages/         # All 5 views
+├── portal-frontend/               # Part B — Frontend
+│   ├── src/
+│   │   ├── App.jsx                # Main app (sidebar, routing, sync bar)
+│   │   ├── api.js                 # API client (env-configurable)
+│   │   ├── socket.js              # Socket.io client
+│   │   ├── index.css              # Dark theme design system
+│   │   └── pages/
+│   │       ├── LoginPage.jsx      # Employee profile selector
+│   │       ├── ClientsPage.jsx    # All clients + filters
+│   │       ├── TradesPage.jsx     # All trades + multi-filter
+│   │       ├── MyClientsPage.jsx  # Employee's mapped clients
+│   │       ├── EmployeesPage.jsx  # Employee directory
+│   │       └── IncentivesPage.jsx # Brokerage-based incentives
+│   └── package.json
 │
-├── ARCHITECTURE.md        # Architecture document
-└── README.md              # This file
+├── ARCHITECTURE.md                # Detailed architecture document
+└── README.md                      # This file
 ```
 
 ---
 
-## Part A — Mock BSE API
+## 🔌 Part A — Mock BSE API
 
-Simulates a slow, unreliable BSE Exchange API:
+Simulates the real BSE Exchange behavior:
 
-| Endpoint | Behavior |
-|----------|----------|
-| `GET /api/clients?page=N` | Paginated, configurable delay, ~20% random failure |
-| `GET /api/trades?page=N&clientId=X&from=DATE&to=DATE` | Filtered + paginated, same delay/failure |
-| `GET /api/internal/employees` | Instant, reliable (no delay, no failures) |
-| `GET /api/internal/mappings` | Instant, reliable |
-| `GET /api/config` | View current delay/failure config |
-| `PUT /api/config` | Update delay at runtime |
+| Endpoint | Behavior | Delay | Failure Rate |
+|----------|----------|-------|--------------|
+| `GET /api/clients?page=N` | Paginated client data | Configurable (default 2s) | ~20% |
+| `GET /api/trades?page=N` | Filterable trade data | Configurable (default 2s) | ~20% |
+| `GET /api/internal/employees` | All employees | Instant | 0% |
+| `GET /api/internal/mappings` | Employee-client maps | Instant | 0% |
+| `GET /api/config` | View current config | Instant | 0% |
+| `PUT /api/config` | Update delay/failure at runtime | Instant | 0% |
 
-**Configuration** (via environment variables or runtime API):
-- `BSE_DELAY_MS` — Delay per page in ms (default: 2000, set to 60000 for 10-min simulation)
-- `BSE_FAILURE_RATE` — Failure probability (default: 0.2 = 20%)
-- `BSE_PAGE_SIZE` — Records per page (default: 50)
+### Configuration
+
+```bash
+# Environment Variables
+BSE_DELAY_MS=2000         # Delay per page (ms). Set 60000 for 10-min simulation
+BSE_FAILURE_RATE=0.2      # Failure probability (0-1)
+BSE_PAGE_SIZE=50           # Records per page
+
+# Runtime Update
+curl -X PUT http://localhost:4000/api/config \
+  -H "Content-Type: application/json" \
+  -d '{"delayPerPageMs": 60000, "failureRate": 0.3}'
+```
+
+### Seed Data
+| Entity | Count | Notes |
+|--------|-------|-------|
+| Clients | ~250 | Indian names, cities, PAN, segments |
+| Trades | ~5000 | NSE/BSE, multiple symbols, 6-month range |
+| Employees | 20 | RM roles, departments |
+| Mappings | ~250 | Each client → 1 employee |
 
 ---
 
-## Part B — Internal Portal
+## 🖥 Part B — Internal Portal
 
 ### Views
 
-| View | Description | Role Access |
-|------|-------------|-------------|
-| Clients | All clients with search, status/city/segment filters, pagination | All |
-| Trades | All trades filterable by client, date range, symbol, type | All |
-| My Clients | Only clients mapped to logged-in employee | Employee |
-| Employees | All employees with client count, department filter | All |
-| Incentives | Brokerage-based incentive calculation | Employee: own / Management: all |
+| # | View | Description | Access |
+|---|------|-------------|--------|
+| 1 | **Clients** | All clients with search, status/city/segment filters, pagination | All |
+| 2 | **Trades** | All trades, filter by client/date-range/symbol/type | All |
+| 3 | **My Clients** | Only logged-in employee's mapped clients | Employee |
+| 4 | **Employees** | Employee directory with client counts, department filter | All |
+| 5 | **Incentives** | Brokerage-based incentive dashboard | Employee: own / Management: all |
 
-### Hard Requirements Met
+### Incentive Formula
 
-1. **< 1 second screen load** — All views serve from SQLite cache instantly, even if BSE is down
-2. **Real-time updates** — Socket.io pushes `data-updated` events to all connected clients when fresh data arrives from BSE sync
-3. **No cronjob/scheduler** — Sync is triggered on-demand via the "Sync from BSE" button
-4. **Retry logic** — Exponential backoff (up to 5 retries) for failed BSE requests
-5. **Deduplication** — `INSERT OR REPLACE` ensures no duplicate records
-6. **Concurrent sync protection** — Only one sync per entity runs at a time
-7. **Data consistency** — Partial failed syncs preserve existing data; no data is deleted on failure
+```
+For each employee:
+  → Find mapped clients (via employee-client mappings)
+  → Sum brokerage from all EXECUTED trades of those clients
+  → Incentive = totalBrokerage × 10%
+```
+
+### Backend API Reference
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/clients?search=&status=&city=&page=` | Paginated clients |
+| GET | `/api/clients/cities` | Distinct cities list |
+| GET | `/api/trades?clientId=&from=&to=&symbol=&tradeType=` | Filtered trades |
+| GET | `/api/trades/symbols` | Distinct symbols list |
+| GET | `/api/employees?search=&department=` | Employee directory |
+| GET | `/api/employees/my-clients?employeeId=` | Mapped clients |
+| GET | `/api/employees/departments` | Department list |
+| GET | `/api/incentives?role=&employeeId=` | Incentive data |
+| POST | `/api/sync/trigger` | Trigger BSE sync `{"entity":"all"}` |
+| GET | `/api/sync/status` | Sync progress |
+| GET | `/api/auth/employees` | Employee list for login |
+| GET | `/api/dashboard/stats` | Dashboard summary |
 
 ---
 
-## Configuration
+## 🌐 Deployment
 
-### Mock BSE API Delay
+### Frontend → Vercel
 
-For development, the default delay is 2 seconds per page. To simulate the real 10-minute pull:
+| Setting | Value |
+|---------|-------|
+| Framework | Vite |
+| Root Directory | `portal-frontend` |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Env: `VITE_API_URL` | `https://your-portal-backend.onrender.com/api` |
+| Env: `VITE_WS_URL` | `https://your-portal-backend.onrender.com` |
 
-```bash
-BSE_DELAY_MS=60000 node server.js
-```
+### Backend → Render (2 Web Services)
 
-Or update at runtime:
-```bash
-curl -X PUT http://localhost:4000/api/config -H "Content-Type: application/json" -d '{"delayPerPageMs": 60000}'
-```
+**Service 1: Mock BSE API**
+
+| Setting | Value |
+|---------|-------|
+| Name | `mock-bse-api` |
+| Root Directory | `mock-bse-api` |
+| Build Command | `npm install && npm run seed` |
+| Start Command | `node server.js` |
+
+**Service 2: Portal Backend**
+
+| Setting | Value |
+|---------|-------|
+| Name | `portal-backend` |
+| Root Directory | `portal-backend` |
+| Build Command | `npm install` |
+| Start Command | `node server.js` |
+| Env: `BSE_API_URL` | `https://your-mock-bse-api.onrender.com` |
+| Env: `FRONTEND_URL` | `https://your-frontend.vercel.app` |
 
 ---
 
-## Scaling to 100× Data Volume
+## 💡 Design Decisions
 
-At 100× volume (~25,000 clients, ~500,000 trades):
+| Decision | Reasoning |
+|----------|-----------|
+| **On-demand sync** (no cronjob) | Assessment requirement; prevents unnecessary BSE load |
+| **Cache-first** (SQLite) | Ensures < 1s page loads even when BSE is down |
+| **Socket.io** for realtime | Pushes `data-updated` events — no polling, no refresh |
+| **Exponential backoff** (5 retries) | Handles BSE's 20% failure rate gracefully |
+| **`INSERT OR REPLACE`** | Idempotent upserts — no duplicates on re-sync |
+| **Concurrent sync guard** | Boolean lock prevents overlapping syncs |
+| **sql.js** (pure JS SQLite) | Zero native dependencies — works everywhere |
+| **Role-based views** | Employee sees own data; Management sees everything |
 
-1. **Database** — Migrate from SQLite to PostgreSQL for concurrent write support
-2. **Sync** — Implement streaming/cursor-based pagination instead of page-based
-3. **Backend** — Add connection pooling, batch upserts (1000 records per transaction)
-4. **Frontend** — Implement virtual scrolling for large tables, server-side pagination (already in place)
-5. **Caching** — Add Redis as a read cache layer between API and database
-6. **Infrastructure** — Deploy backend as multiple workers behind a load balancer; use message queues (Bull/RabbitMQ) for sync jobs
+---
+
+## 📈 Scaling to 100× Data Volume
+
+At 25,000 clients and 500,000 trades:
+
+| Layer | Current | At Scale |
+|-------|---------|----------|
+| Database | SQLite (file-based) | PostgreSQL + connection pooling |
+| Sync | Sequential page fetch | Parallel fetches + batch upserts |
+| API Server | Single Node.js process | Clustered workers + load balancer |
+| Read Cache | SQLite reads | Redis cache layer |
+| Frontend | Client pagination | Virtual scrolling (react-window) |
+| WebSocket | Single-server Socket.io | Redis adapter for multi-server |
+| Queue | In-process | Bull/RabbitMQ for job management |
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 19, Vite, Vanilla CSS (Dark Theme) |
+| Backend | Node.js, Express |
+| Database | SQLite via sql.js (pure JavaScript) |
+| Real-time | Socket.io |
+| Mock API | Express with configurable delay/failure |
+
+---
+
+<div align="center">
+
+**Built for Arham Fintech Private Limited** · Technical Assessment
+
+</div>
