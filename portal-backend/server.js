@@ -71,6 +71,17 @@ app.get('/api/auth/employees', async (req, res) => {
     res.json({ data: employees });
 });
 
+// Debug endpoint — test sync directly
+app.get('/api/debug/sync', async (req, res) => {
+    try {
+        const result = await syncInternal();
+        const employees = queryAll('SELECT employeeId, name FROM employees');
+        res.json({ status: 'ok', result, employeeCount: employees.length, bseUrl: process.env.BSE_API_URL || 'https://bse-api-njul.onrender.com (default)' });
+    } catch (err) {
+        res.json({ status: 'error', error: err.message, stack: err.stack, bseUrl: process.env.BSE_API_URL || 'https://bse-api-njul.onrender.com (default)' });
+    }
+});
+
 // Dashboard stats
 app.get('/api/dashboard/stats', (req, res) => {
     const clientCount = queryOne('SELECT COUNT(*) as count FROM clients')?.count || 0;
