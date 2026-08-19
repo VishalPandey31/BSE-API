@@ -55,9 +55,19 @@ app.use('/api/employees', employeesRouter);
 app.use('/api/incentives', incentivesRouter);
 app.use('/api/sync', syncRouter);
 
-// Auth simulation — get employee list for login
-app.get('/api/auth/employees', (req, res) => {
-    const employees = queryAll('SELECT employeeId, name, role, designation, department FROM employees ORDER BY name');
+// Auth simulation — get employee list for login (auto-syncs if empty)
+app.get('/api/auth/employees', async (req, res) => {
+    let employees = queryAll('SELECT employeeId, name, role, designation, department FROM employees ORDER BY name');
+    if (employees.length === 0) {
+        console.log('[AUTH] No employees found, triggering sync...');
+        try {
+            await syncInternal();
+            employees = queryAll('SELECT employeeId, name, role, designation, department FROM employees ORDER BY name');
+            console.log(`[AUTH] Sync complete, found ${employees.length} employees.`);
+        } catch (err) {
+            console.error('[AUTH] Auto-sync failed:', err.message);
+        }
+    }
     res.json({ data: employees });
 });
 
@@ -94,11 +104,20 @@ async function start() {
     await initDb();
     console.log('Database initialized.');
 
-    try {
-        await syncInternal();
-        console.log('Internal data synced on startup.');
-    } catch (err) {
-        console.warn('Could not sync internal data on startup (BSE API may not be running):', err.message);
+    // Retry sync up to 3 times with increasing delay (handles Render cold starts)
+    for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+            await syncInternal();
+            console.log('Internal data synced on startup.');
+            break;
+        } catch (err) {
+            console.warn(`Sync attempt ${attempt}/3 failed: ${err.message}`);
+            if (attempt < 3) {
+                const delay = attempt * 10000;
+                console.log(`  Retrying in ${delay / 1000}s...`);
+                await new Promise(r => setTimeout(r, delay));
+            }
+        }
     }
 
     server.listen(PORT, () => {
