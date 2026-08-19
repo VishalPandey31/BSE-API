@@ -2,7 +2,7 @@ const http = require('http');
 const https = require('https');
 const { getDb, queryAll, queryOne, runSql, saveDb } = require('../db');
 
-const BSE_BASE_URL = process.env.BSE_API_URL || 'http://localhost:4000';
+const BSE_BASE_URL = process.env.BSE_API_URL || 'https://bse-api-njul.onrender.com';
 
 let syncInProgress = { clients: false, trades: false };
 
