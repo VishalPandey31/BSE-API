@@ -1,4 +1,5 @@
 const http = require('http');
+const https = require('https');
 const { getDb, queryAll, queryOne, runSql, saveDb } = require('../db');
 
 const BSE_BASE_URL = process.env.BSE_API_URL || 'http://localhost:4000';
@@ -8,7 +9,8 @@ let syncInProgress = { clients: false, trades: false };
 function fetchWithTimeout(url, timeoutMs = 30000) {
     return new Promise((resolve, reject) => {
         const urlObj = new URL(url);
-        const req = http.get(urlObj, { timeout: timeoutMs }, (res) => {
+        const client = urlObj.protocol === 'https:' ? https : http;
+        const req = client.get(urlObj, { timeout: timeoutMs }, (res) => {
             let data = '';
             res.on('data', chunk => { data += chunk; });
             res.on('end', () => {
