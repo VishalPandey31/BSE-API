@@ -1,30 +1,22 @@
-const http = require('http');
-const https = require('https');
 const { getDb, queryAll, queryOne, runSql, saveDb } = require('../db');
 
 const BSE_BASE_URL = process.env.BSE_API_URL || 'https://bse-api-njul.onrender.com';
 
 let syncInProgress = { clients: false, trades: false };
 
-function fetchWithTimeout(url, timeoutMs = 30000) {
-    return new Promise((resolve, reject) => {
-        const urlObj = new URL(url);
-        const client = urlObj.protocol === 'https:' ? https : http;
-        const req = client.get(urlObj, { timeout: timeoutMs }, (res) => {
-            let data = '';
-            res.on('data', chunk => { data += chunk; });
-            res.on('end', () => {
-                if (res.statusCode >= 400) {
-                    reject(new Error(`HTTP ${res.statusCode}: ${data}`));
-                } else {
-                    try { resolve(JSON.parse(data)); }
-                    catch (e) { reject(new Error(`Invalid JSON: ${data.substring(0, 200)}`)); }
-                }
-            });
-        });
-        req.on('error', reject);
-        req.on('timeout', () => { req.destroy(); reject(new Error('Request timed out')); });
-    });
+async function fetchWithTimeout(url, timeoutMs = 30000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+        const res = await fetch(url, { signal: controller.signal });
+        if (!res.ok) {
+            const text = await res.text();
+            throw new Error(`HTTP ${res.status}: ${text}`);
+        }
+        return await res.json();
+    } finally {
+        clearTimeout(timer);
+    }
 }
 
 async function fetchWithRetry(url, maxRetries = 5) {
