@@ -1,0 +1,1502 @@
+[
+  {
+    "mappingId": "MAP000001",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000001",
+    "assignedDate": "2025-03-15"
+  },
+  {
+    "mappingId": "MAP000002",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000002",
+    "assignedDate": "2018-02-05"
+  },
+  {
+    "mappingId": "MAP000003",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000003",
+    "assignedDate": "2019-07-18"
+  },
+  {
+    "mappingId": "MAP000004",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000004",
+    "assignedDate": "2018-10-12"
+  },
+  {
+    "mappingId": "MAP000005",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000005",
+    "assignedDate": "2025-10-25"
+  },
+  {
+    "mappingId": "MAP000006",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000006",
+    "assignedDate": "2021-02-08"
+  },
+  {
+    "mappingId": "MAP000007",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000007",
+    "assignedDate": "2021-02-18"
+  },
+  {
+    "mappingId": "MAP000008",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000008",
+    "assignedDate": "2019-05-07"
+  },
+  {
+    "mappingId": "MAP000009",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000009",
+    "assignedDate": "2019-07-15"
+  },
+  {
+    "mappingId": "MAP000010",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000010",
+    "assignedDate": "2019-01-16"
+  },
+  {
+    "mappingId": "MAP000011",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000011",
+    "assignedDate": "2021-09-05"
+  },
+  {
+    "mappingId": "MAP000012",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000012",
+    "assignedDate": "2018-05-25"
+  },
+  {
+    "mappingId": "MAP000013",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000013",
+    "assignedDate": "2018-03-09"
+  },
+  {
+    "mappingId": "MAP000014",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000014",
+    "assignedDate": "2019-01-14"
+  },
+  {
+    "mappingId": "MAP000015",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000015",
+    "assignedDate": "2023-12-12"
+  },
+  {
+    "mappingId": "MAP000016",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000016",
+    "assignedDate": "2023-04-07"
+  },
+  {
+    "mappingId": "MAP000017",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000017",
+    "assignedDate": "2018-01-24"
+  },
+  {
+    "mappingId": "MAP000018",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000018",
+    "assignedDate": "2020-04-23"
+  },
+  {
+    "mappingId": "MAP000019",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000019",
+    "assignedDate": "2021-06-19"
+  },
+  {
+    "mappingId": "MAP000020",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000020",
+    "assignedDate": "2025-06-02"
+  },
+  {
+    "mappingId": "MAP000021",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000021",
+    "assignedDate": "2020-08-21"
+  },
+  {
+    "mappingId": "MAP000022",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000022",
+    "assignedDate": "2020-11-16"
+  },
+  {
+    "mappingId": "MAP000023",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000023",
+    "assignedDate": "2022-11-14"
+  },
+  {
+    "mappingId": "MAP000024",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000024",
+    "assignedDate": "2024-05-06"
+  },
+  {
+    "mappingId": "MAP000025",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000025",
+    "assignedDate": "2025-03-02"
+  },
+  {
+    "mappingId": "MAP000026",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000026",
+    "assignedDate": "2022-01-19"
+  },
+  {
+    "mappingId": "MAP000027",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000027",
+    "assignedDate": "2020-01-08"
+  },
+  {
+    "mappingId": "MAP000028",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000028",
+    "assignedDate": "2018-05-02"
+  },
+  {
+    "mappingId": "MAP000029",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000029",
+    "assignedDate": "2024-06-04"
+  },
+  {
+    "mappingId": "MAP000030",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000030",
+    "assignedDate": "2019-05-13"
+  },
+  {
+    "mappingId": "MAP000031",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000031",
+    "assignedDate": "2024-11-11"
+  },
+  {
+    "mappingId": "MAP000032",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000032",
+    "assignedDate": "2023-12-01"
+  },
+  {
+    "mappingId": "MAP000033",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000033",
+    "assignedDate": "2019-05-12"
+  },
+  {
+    "mappingId": "MAP000034",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000034",
+    "assignedDate": "2019-11-10"
+  },
+  {
+    "mappingId": "MAP000035",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000035",
+    "assignedDate": "2022-08-28"
+  },
+  {
+    "mappingId": "MAP000036",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000036",
+    "assignedDate": "2018-02-23"
+  },
+  {
+    "mappingId": "MAP000037",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000037",
+    "assignedDate": "2020-09-18"
+  },
+  {
+    "mappingId": "MAP000038",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000038",
+    "assignedDate": "2022-01-05"
+  },
+  {
+    "mappingId": "MAP000039",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000039",
+    "assignedDate": "2022-05-01"
+  },
+  {
+    "mappingId": "MAP000040",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000040",
+    "assignedDate": "2018-07-19"
+  },
+  {
+    "mappingId": "MAP000041",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000041",
+    "assignedDate": "2021-01-20"
+  },
+  {
+    "mappingId": "MAP000042",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000042",
+    "assignedDate": "2022-03-17"
+  },
+  {
+    "mappingId": "MAP000043",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000043",
+    "assignedDate": "2023-02-18"
+  },
+  {
+    "mappingId": "MAP000044",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000044",
+    "assignedDate": "2019-03-09"
+  },
+  {
+    "mappingId": "MAP000045",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000045",
+    "assignedDate": "2021-04-07"
+  },
+  {
+    "mappingId": "MAP000046",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000046",
+    "assignedDate": "2019-02-24"
+  },
+  {
+    "mappingId": "MAP000047",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000047",
+    "assignedDate": "2020-07-20"
+  },
+  {
+    "mappingId": "MAP000048",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000048",
+    "assignedDate": "2018-01-24"
+  },
+  {
+    "mappingId": "MAP000049",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000049",
+    "assignedDate": "2023-12-19"
+  },
+  {
+    "mappingId": "MAP000050",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000050",
+    "assignedDate": "2023-12-23"
+  },
+  {
+    "mappingId": "MAP000051",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000051",
+    "assignedDate": "2025-07-17"
+  },
+  {
+    "mappingId": "MAP000052",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000052",
+    "assignedDate": "2021-09-19"
+  },
+  {
+    "mappingId": "MAP000053",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000053",
+    "assignedDate": "2022-04-27"
+  },
+  {
+    "mappingId": "MAP000054",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000054",
+    "assignedDate": "2018-09-23"
+  },
+  {
+    "mappingId": "MAP000055",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000055",
+    "assignedDate": "2021-09-14"
+  },
+  {
+    "mappingId": "MAP000056",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000056",
+    "assignedDate": "2020-07-30"
+  },
+  {
+    "mappingId": "MAP000057",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000057",
+    "assignedDate": "2022-09-17"
+  },
+  {
+    "mappingId": "MAP000058",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000058",
+    "assignedDate": "2019-11-13"
+  },
+  {
+    "mappingId": "MAP000059",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000059",
+    "assignedDate": "2025-10-03"
+  },
+  {
+    "mappingId": "MAP000060",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000060",
+    "assignedDate": "2020-06-29"
+  },
+  {
+    "mappingId": "MAP000061",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000061",
+    "assignedDate": "2024-12-08"
+  },
+  {
+    "mappingId": "MAP000062",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000062",
+    "assignedDate": "2020-03-06"
+  },
+  {
+    "mappingId": "MAP000063",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000063",
+    "assignedDate": "2020-05-13"
+  },
+  {
+    "mappingId": "MAP000064",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000064",
+    "assignedDate": "2018-12-08"
+  },
+  {
+    "mappingId": "MAP000065",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000065",
+    "assignedDate": "2024-07-02"
+  },
+  {
+    "mappingId": "MAP000066",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000066",
+    "assignedDate": "2024-04-24"
+  },
+  {
+    "mappingId": "MAP000067",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000067",
+    "assignedDate": "2019-01-23"
+  },
+  {
+    "mappingId": "MAP000068",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000068",
+    "assignedDate": "2022-05-10"
+  },
+  {
+    "mappingId": "MAP000069",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000069",
+    "assignedDate": "2022-05-27"
+  },
+  {
+    "mappingId": "MAP000070",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000070",
+    "assignedDate": "2022-04-18"
+  },
+  {
+    "mappingId": "MAP000071",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000071",
+    "assignedDate": "2022-07-27"
+  },
+  {
+    "mappingId": "MAP000072",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000072",
+    "assignedDate": "2023-02-05"
+  },
+  {
+    "mappingId": "MAP000073",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000073",
+    "assignedDate": "2023-07-22"
+  },
+  {
+    "mappingId": "MAP000074",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000074",
+    "assignedDate": "2023-02-16"
+  },
+  {
+    "mappingId": "MAP000075",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000075",
+    "assignedDate": "2025-09-11"
+  },
+  {
+    "mappingId": "MAP000076",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000076",
+    "assignedDate": "2022-07-07"
+  },
+  {
+    "mappingId": "MAP000077",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000077",
+    "assignedDate": "2021-11-28"
+  },
+  {
+    "mappingId": "MAP000078",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000078",
+    "assignedDate": "2024-01-18"
+  },
+  {
+    "mappingId": "MAP000079",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000079",
+    "assignedDate": "2025-01-21"
+  },
+  {
+    "mappingId": "MAP000080",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000080",
+    "assignedDate": "2023-01-06"
+  },
+  {
+    "mappingId": "MAP000081",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000081",
+    "assignedDate": "2020-02-03"
+  },
+  {
+    "mappingId": "MAP000082",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000082",
+    "assignedDate": "2020-06-30"
+  },
+  {
+    "mappingId": "MAP000083",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000083",
+    "assignedDate": "2025-09-12"
+  },
+  {
+    "mappingId": "MAP000084",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000084",
+    "assignedDate": "2024-03-16"
+  },
+  {
+    "mappingId": "MAP000085",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000085",
+    "assignedDate": "2023-04-03"
+  },
+  {
+    "mappingId": "MAP000086",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000086",
+    "assignedDate": "2018-09-01"
+  },
+  {
+    "mappingId": "MAP000087",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000087",
+    "assignedDate": "2021-11-21"
+  },
+  {
+    "mappingId": "MAP000088",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000088",
+    "assignedDate": "2024-01-26"
+  },
+  {
+    "mappingId": "MAP000089",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000089",
+    "assignedDate": "2021-04-07"
+  },
+  {
+    "mappingId": "MAP000090",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000090",
+    "assignedDate": "2023-11-15"
+  },
+  {
+    "mappingId": "MAP000091",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000091",
+    "assignedDate": "2020-05-25"
+  },
+  {
+    "mappingId": "MAP000092",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000092",
+    "assignedDate": "2020-12-07"
+  },
+  {
+    "mappingId": "MAP000093",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000093",
+    "assignedDate": "2025-11-03"
+  },
+  {
+    "mappingId": "MAP000094",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000094",
+    "assignedDate": "2018-07-12"
+  },
+  {
+    "mappingId": "MAP000095",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000095",
+    "assignedDate": "2019-12-13"
+  },
+  {
+    "mappingId": "MAP000096",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000096",
+    "assignedDate": "2023-10-17"
+  },
+  {
+    "mappingId": "MAP000097",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000097",
+    "assignedDate": "2019-06-05"
+  },
+  {
+    "mappingId": "MAP000098",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000098",
+    "assignedDate": "2024-06-11"
+  },
+  {
+    "mappingId": "MAP000099",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000099",
+    "assignedDate": "2020-01-23"
+  },
+  {
+    "mappingId": "MAP000100",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000100",
+    "assignedDate": "2021-10-01"
+  },
+  {
+    "mappingId": "MAP000101",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000101",
+    "assignedDate": "2019-08-07"
+  },
+  {
+    "mappingId": "MAP000102",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000102",
+    "assignedDate": "2020-05-11"
+  },
+  {
+    "mappingId": "MAP000103",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000103",
+    "assignedDate": "2018-05-03"
+  },
+  {
+    "mappingId": "MAP000104",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000104",
+    "assignedDate": "2021-08-11"
+  },
+  {
+    "mappingId": "MAP000105",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000105",
+    "assignedDate": "2024-11-18"
+  },
+  {
+    "mappingId": "MAP000106",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000106",
+    "assignedDate": "2022-12-30"
+  },
+  {
+    "mappingId": "MAP000107",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000107",
+    "assignedDate": "2024-07-13"
+  },
+  {
+    "mappingId": "MAP000108",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000108",
+    "assignedDate": "2019-06-22"
+  },
+  {
+    "mappingId": "MAP000109",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000109",
+    "assignedDate": "2018-09-27"
+  },
+  {
+    "mappingId": "MAP000110",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000110",
+    "assignedDate": "2023-06-29"
+  },
+  {
+    "mappingId": "MAP000111",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000111",
+    "assignedDate": "2025-11-19"
+  },
+  {
+    "mappingId": "MAP000112",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000112",
+    "assignedDate": "2022-08-06"
+  },
+  {
+    "mappingId": "MAP000113",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000113",
+    "assignedDate": "2024-09-07"
+  },
+  {
+    "mappingId": "MAP000114",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000114",
+    "assignedDate": "2023-03-11"
+  },
+  {
+    "mappingId": "MAP000115",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000115",
+    "assignedDate": "2020-11-15"
+  },
+  {
+    "mappingId": "MAP000116",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000116",
+    "assignedDate": "2018-03-01"
+  },
+  {
+    "mappingId": "MAP000117",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000117",
+    "assignedDate": "2018-08-10"
+  },
+  {
+    "mappingId": "MAP000118",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000118",
+    "assignedDate": "2021-10-08"
+  },
+  {
+    "mappingId": "MAP000119",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000119",
+    "assignedDate": "2020-08-05"
+  },
+  {
+    "mappingId": "MAP000120",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000120",
+    "assignedDate": "2022-12-13"
+  },
+  {
+    "mappingId": "MAP000121",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000121",
+    "assignedDate": "2018-09-01"
+  },
+  {
+    "mappingId": "MAP000122",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000122",
+    "assignedDate": "2020-11-11"
+  },
+  {
+    "mappingId": "MAP000123",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000123",
+    "assignedDate": "2021-07-27"
+  },
+  {
+    "mappingId": "MAP000124",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000124",
+    "assignedDate": "2020-06-06"
+  },
+  {
+    "mappingId": "MAP000125",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000125",
+    "assignedDate": "2022-11-26"
+  },
+  {
+    "mappingId": "MAP000126",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000126",
+    "assignedDate": "2023-07-11"
+  },
+  {
+    "mappingId": "MAP000127",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000127",
+    "assignedDate": "2025-05-15"
+  },
+  {
+    "mappingId": "MAP000128",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000128",
+    "assignedDate": "2021-12-24"
+  },
+  {
+    "mappingId": "MAP000129",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000129",
+    "assignedDate": "2024-08-17"
+  },
+  {
+    "mappingId": "MAP000130",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000130",
+    "assignedDate": "2020-12-29"
+  },
+  {
+    "mappingId": "MAP000131",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000131",
+    "assignedDate": "2021-03-31"
+  },
+  {
+    "mappingId": "MAP000132",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000132",
+    "assignedDate": "2023-07-17"
+  },
+  {
+    "mappingId": "MAP000133",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000133",
+    "assignedDate": "2021-08-04"
+  },
+  {
+    "mappingId": "MAP000134",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000134",
+    "assignedDate": "2023-06-25"
+  },
+  {
+    "mappingId": "MAP000135",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000135",
+    "assignedDate": "2021-08-11"
+  },
+  {
+    "mappingId": "MAP000136",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000136",
+    "assignedDate": "2022-12-07"
+  },
+  {
+    "mappingId": "MAP000137",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000137",
+    "assignedDate": "2024-09-19"
+  },
+  {
+    "mappingId": "MAP000138",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000138",
+    "assignedDate": "2019-04-19"
+  },
+  {
+    "mappingId": "MAP000139",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000139",
+    "assignedDate": "2023-10-26"
+  },
+  {
+    "mappingId": "MAP000140",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000140",
+    "assignedDate": "2023-12-21"
+  },
+  {
+    "mappingId": "MAP000141",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000141",
+    "assignedDate": "2018-06-15"
+  },
+  {
+    "mappingId": "MAP000142",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000142",
+    "assignedDate": "2021-07-01"
+  },
+  {
+    "mappingId": "MAP000143",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000143",
+    "assignedDate": "2022-12-14"
+  },
+  {
+    "mappingId": "MAP000144",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000144",
+    "assignedDate": "2021-02-28"
+  },
+  {
+    "mappingId": "MAP000145",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000145",
+    "assignedDate": "2022-04-11"
+  },
+  {
+    "mappingId": "MAP000146",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000146",
+    "assignedDate": "2020-07-07"
+  },
+  {
+    "mappingId": "MAP000147",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000147",
+    "assignedDate": "2020-04-28"
+  },
+  {
+    "mappingId": "MAP000148",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000148",
+    "assignedDate": "2023-03-16"
+  },
+  {
+    "mappingId": "MAP000149",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000149",
+    "assignedDate": "2020-01-11"
+  },
+  {
+    "mappingId": "MAP000150",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000150",
+    "assignedDate": "2023-06-16"
+  },
+  {
+    "mappingId": "MAP000151",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000151",
+    "assignedDate": "2024-07-10"
+  },
+  {
+    "mappingId": "MAP000152",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000152",
+    "assignedDate": "2020-12-10"
+  },
+  {
+    "mappingId": "MAP000153",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000153",
+    "assignedDate": "2018-02-01"
+  },
+  {
+    "mappingId": "MAP000154",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000154",
+    "assignedDate": "2024-08-22"
+  },
+  {
+    "mappingId": "MAP000155",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000155",
+    "assignedDate": "2020-07-08"
+  },
+  {
+    "mappingId": "MAP000156",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000156",
+    "assignedDate": "2022-09-17"
+  },
+  {
+    "mappingId": "MAP000157",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000157",
+    "assignedDate": "2025-08-29"
+  },
+  {
+    "mappingId": "MAP000158",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000158",
+    "assignedDate": "2023-03-06"
+  },
+  {
+    "mappingId": "MAP000159",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000159",
+    "assignedDate": "2024-09-30"
+  },
+  {
+    "mappingId": "MAP000160",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000160",
+    "assignedDate": "2019-12-11"
+  },
+  {
+    "mappingId": "MAP000161",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000161",
+    "assignedDate": "2021-09-06"
+  },
+  {
+    "mappingId": "MAP000162",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000162",
+    "assignedDate": "2020-02-16"
+  },
+  {
+    "mappingId": "MAP000163",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000163",
+    "assignedDate": "2020-11-16"
+  },
+  {
+    "mappingId": "MAP000164",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000164",
+    "assignedDate": "2024-01-07"
+  },
+  {
+    "mappingId": "MAP000165",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000165",
+    "assignedDate": "2025-12-09"
+  },
+  {
+    "mappingId": "MAP000166",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000166",
+    "assignedDate": "2020-10-14"
+  },
+  {
+    "mappingId": "MAP000167",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000167",
+    "assignedDate": "2022-05-27"
+  },
+  {
+    "mappingId": "MAP000168",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000168",
+    "assignedDate": "2018-10-11"
+  },
+  {
+    "mappingId": "MAP000169",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000169",
+    "assignedDate": "2022-10-21"
+  },
+  {
+    "mappingId": "MAP000170",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000170",
+    "assignedDate": "2024-09-30"
+  },
+  {
+    "mappingId": "MAP000171",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000171",
+    "assignedDate": "2024-05-31"
+  },
+  {
+    "mappingId": "MAP000172",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000172",
+    "assignedDate": "2019-02-02"
+  },
+  {
+    "mappingId": "MAP000173",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000173",
+    "assignedDate": "2023-03-06"
+  },
+  {
+    "mappingId": "MAP000174",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000174",
+    "assignedDate": "2019-05-18"
+  },
+  {
+    "mappingId": "MAP000175",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000175",
+    "assignedDate": "2022-05-06"
+  },
+  {
+    "mappingId": "MAP000176",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000176",
+    "assignedDate": "2020-04-10"
+  },
+  {
+    "mappingId": "MAP000177",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000177",
+    "assignedDate": "2023-04-01"
+  },
+  {
+    "mappingId": "MAP000178",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000178",
+    "assignedDate": "2020-03-31"
+  },
+  {
+    "mappingId": "MAP000179",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000179",
+    "assignedDate": "2021-01-04"
+  },
+  {
+    "mappingId": "MAP000180",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000180",
+    "assignedDate": "2023-01-28"
+  },
+  {
+    "mappingId": "MAP000181",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000181",
+    "assignedDate": "2020-11-05"
+  },
+  {
+    "mappingId": "MAP000182",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000182",
+    "assignedDate": "2018-05-15"
+  },
+  {
+    "mappingId": "MAP000183",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000183",
+    "assignedDate": "2023-11-13"
+  },
+  {
+    "mappingId": "MAP000184",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000184",
+    "assignedDate": "2020-06-02"
+  },
+  {
+    "mappingId": "MAP000185",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000185",
+    "assignedDate": "2023-03-07"
+  },
+  {
+    "mappingId": "MAP000186",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000186",
+    "assignedDate": "2019-07-08"
+  },
+  {
+    "mappingId": "MAP000187",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000187",
+    "assignedDate": "2020-09-03"
+  },
+  {
+    "mappingId": "MAP000188",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000188",
+    "assignedDate": "2021-01-14"
+  },
+  {
+    "mappingId": "MAP000189",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000189",
+    "assignedDate": "2019-08-31"
+  },
+  {
+    "mappingId": "MAP000190",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000190",
+    "assignedDate": "2020-10-17"
+  },
+  {
+    "mappingId": "MAP000191",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000191",
+    "assignedDate": "2021-09-23"
+  },
+  {
+    "mappingId": "MAP000192",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000192",
+    "assignedDate": "2019-12-15"
+  },
+  {
+    "mappingId": "MAP000193",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000193",
+    "assignedDate": "2023-12-14"
+  },
+  {
+    "mappingId": "MAP000194",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000194",
+    "assignedDate": "2025-03-20"
+  },
+  {
+    "mappingId": "MAP000195",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000195",
+    "assignedDate": "2025-03-12"
+  },
+  {
+    "mappingId": "MAP000196",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000196",
+    "assignedDate": "2018-10-03"
+  },
+  {
+    "mappingId": "MAP000197",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000197",
+    "assignedDate": "2020-02-18"
+  },
+  {
+    "mappingId": "MAP000198",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000198",
+    "assignedDate": "2025-01-05"
+  },
+  {
+    "mappingId": "MAP000199",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000199",
+    "assignedDate": "2022-08-11"
+  },
+  {
+    "mappingId": "MAP000200",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000200",
+    "assignedDate": "2025-05-28"
+  },
+  {
+    "mappingId": "MAP000201",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000201",
+    "assignedDate": "2023-04-02"
+  },
+  {
+    "mappingId": "MAP000202",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000202",
+    "assignedDate": "2025-04-15"
+  },
+  {
+    "mappingId": "MAP000203",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000203",
+    "assignedDate": "2022-04-13"
+  },
+  {
+    "mappingId": "MAP000204",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000204",
+    "assignedDate": "2023-04-03"
+  },
+  {
+    "mappingId": "MAP000205",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000205",
+    "assignedDate": "2021-10-09"
+  },
+  {
+    "mappingId": "MAP000206",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000206",
+    "assignedDate": "2022-08-20"
+  },
+  {
+    "mappingId": "MAP000207",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000207",
+    "assignedDate": "2019-09-05"
+  },
+  {
+    "mappingId": "MAP000208",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000208",
+    "assignedDate": "2023-01-29"
+  },
+  {
+    "mappingId": "MAP000209",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000209",
+    "assignedDate": "2021-03-23"
+  },
+  {
+    "mappingId": "MAP000210",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000210",
+    "assignedDate": "2021-05-17"
+  },
+  {
+    "mappingId": "MAP000211",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000211",
+    "assignedDate": "2020-02-19"
+  },
+  {
+    "mappingId": "MAP000212",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000212",
+    "assignedDate": "2019-05-11"
+  },
+  {
+    "mappingId": "MAP000213",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000213",
+    "assignedDate": "2019-01-28"
+  },
+  {
+    "mappingId": "MAP000214",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000214",
+    "assignedDate": "2025-12-10"
+  },
+  {
+    "mappingId": "MAP000215",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000215",
+    "assignedDate": "2022-03-15"
+  },
+  {
+    "mappingId": "MAP000216",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000216",
+    "assignedDate": "2020-05-29"
+  },
+  {
+    "mappingId": "MAP000217",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000217",
+    "assignedDate": "2022-03-01"
+  },
+  {
+    "mappingId": "MAP000218",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000218",
+    "assignedDate": "2022-10-03"
+  },
+  {
+    "mappingId": "MAP000219",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000219",
+    "assignedDate": "2024-12-20"
+  },
+  {
+    "mappingId": "MAP000220",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000220",
+    "assignedDate": "2020-12-16"
+  },
+  {
+    "mappingId": "MAP000221",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000221",
+    "assignedDate": "2020-07-22"
+  },
+  {
+    "mappingId": "MAP000222",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000222",
+    "assignedDate": "2023-11-24"
+  },
+  {
+    "mappingId": "MAP000223",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000223",
+    "assignedDate": "2023-05-14"
+  },
+  {
+    "mappingId": "MAP000224",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000224",
+    "assignedDate": "2021-10-17"
+  },
+  {
+    "mappingId": "MAP000225",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000225",
+    "assignedDate": "2023-06-24"
+  },
+  {
+    "mappingId": "MAP000226",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000226",
+    "assignedDate": "2025-05-06"
+  },
+  {
+    "mappingId": "MAP000227",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000227",
+    "assignedDate": "2025-04-13"
+  },
+  {
+    "mappingId": "MAP000228",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000228",
+    "assignedDate": "2018-12-09"
+  },
+  {
+    "mappingId": "MAP000229",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000229",
+    "assignedDate": "2024-07-29"
+  },
+  {
+    "mappingId": "MAP000230",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000230",
+    "assignedDate": "2023-01-04"
+  },
+  {
+    "mappingId": "MAP000231",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000231",
+    "assignedDate": "2019-05-13"
+  },
+  {
+    "mappingId": "MAP000232",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000232",
+    "assignedDate": "2020-05-11"
+  },
+  {
+    "mappingId": "MAP000233",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000233",
+    "assignedDate": "2023-11-03"
+  },
+  {
+    "mappingId": "MAP000234",
+    "employeeId": "EMP0016",
+    "clientId": "BSE000234",
+    "assignedDate": "2024-11-17"
+  },
+  {
+    "mappingId": "MAP000235",
+    "employeeId": "EMP0017",
+    "clientId": "BSE000235",
+    "assignedDate": "2022-08-30"
+  },
+  {
+    "mappingId": "MAP000236",
+    "employeeId": "EMP0018",
+    "clientId": "BSE000236",
+    "assignedDate": "2019-05-30"
+  },
+  {
+    "mappingId": "MAP000237",
+    "employeeId": "EMP0019",
+    "clientId": "BSE000237",
+    "assignedDate": "2024-01-10"
+  },
+  {
+    "mappingId": "MAP000238",
+    "employeeId": "EMP0020",
+    "clientId": "BSE000238",
+    "assignedDate": "2020-06-21"
+  },
+  {
+    "mappingId": "MAP000239",
+    "employeeId": "EMP0004",
+    "clientId": "BSE000239",
+    "assignedDate": "2018-12-03"
+  },
+  {
+    "mappingId": "MAP000240",
+    "employeeId": "EMP0005",
+    "clientId": "BSE000240",
+    "assignedDate": "2025-11-08"
+  },
+  {
+    "mappingId": "MAP000241",
+    "employeeId": "EMP0006",
+    "clientId": "BSE000241",
+    "assignedDate": "2019-07-26"
+  },
+  {
+    "mappingId": "MAP000242",
+    "employeeId": "EMP0007",
+    "clientId": "BSE000242",
+    "assignedDate": "2025-06-19"
+  },
+  {
+    "mappingId": "MAP000243",
+    "employeeId": "EMP0008",
+    "clientId": "BSE000243",
+    "assignedDate": "2018-05-30"
+  },
+  {
+    "mappingId": "MAP000244",
+    "employeeId": "EMP0009",
+    "clientId": "BSE000244",
+    "assignedDate": "2018-01-15"
+  },
+  {
+    "mappingId": "MAP000245",
+    "employeeId": "EMP0010",
+    "clientId": "BSE000245",
+    "assignedDate": "2018-04-09"
+  },
+  {
+    "mappingId": "MAP000246",
+    "employeeId": "EMP0011",
+    "clientId": "BSE000246",
+    "assignedDate": "2025-01-06"
+  },
+  {
+    "mappingId": "MAP000247",
+    "employeeId": "EMP0012",
+    "clientId": "BSE000247",
+    "assignedDate": "2021-04-09"
+  },
+  {
+    "mappingId": "MAP000248",
+    "employeeId": "EMP0013",
+    "clientId": "BSE000248",
+    "assignedDate": "2020-10-04"
+  },
+  {
+    "mappingId": "MAP000249",
+    "employeeId": "EMP0014",
+    "clientId": "BSE000249",
+    "assignedDate": "2021-01-26"
+  },
+  {
+    "mappingId": "MAP000250",
+    "employeeId": "EMP0015",
+    "clientId": "BSE000250",
+    "assignedDate": "2023-08-16"
+  }
+]

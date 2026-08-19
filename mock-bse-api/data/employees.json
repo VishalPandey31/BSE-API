@@ -1,0 +1,202 @@
+[
+  {
+    "employeeId": "EMP0001",
+    "name": "Deepak Patel",
+    "email": "deepak.patel@arhamfintech.com",
+    "designation": "Head of Sales",
+    "department": "HNI Desk",
+    "role": "MANAGEMENT",
+    "joiningDate": "2019-12-05",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0002",
+    "name": "Neha Sharma",
+    "email": "neha.sharma@arhamfintech.com",
+    "designation": "VP",
+    "department": "Wealth Management",
+    "role": "MANAGEMENT",
+    "joiningDate": "2024-06-15",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0003",
+    "name": "Aadhya Malhotra",
+    "email": "aadhya.malhotra@arhamfintech.com",
+    "designation": "Director",
+    "department": "Wealth Management",
+    "role": "MANAGEMENT",
+    "joiningDate": "2025-02-11",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0004",
+    "name": "Krishna Goel",
+    "email": "krishna.goel@arhamfintech.com",
+    "designation": "Associate VP",
+    "department": "HNI Desk",
+    "role": "EMPLOYEE",
+    "joiningDate": "2023-05-03",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0005",
+    "name": "Parth Sharma",
+    "email": "parth.sharma@arhamfintech.com",
+    "designation": "Associate VP",
+    "department": "Institutional Sales",
+    "role": "EMPLOYEE",
+    "joiningDate": "2021-10-19",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0006",
+    "name": "Neel Dubey",
+    "email": "neel.dubey@arhamfintech.com",
+    "designation": "Relationship Manager",
+    "department": "Institutional Sales",
+    "role": "EMPLOYEE",
+    "joiningDate": "2022-10-23",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0007",
+    "name": "Shaurya Verma",
+    "email": "shaurya.verma@arhamfintech.com",
+    "designation": "Relationship Manager",
+    "department": "Institutional Sales",
+    "role": "EMPLOYEE",
+    "joiningDate": "2021-07-20",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0008",
+    "name": "Rohan Malhotra",
+    "email": "rohan.malhotra@arhamfintech.com",
+    "designation": "Vice President",
+    "department": "Wealth Management",
+    "role": "EMPLOYEE",
+    "joiningDate": "2024-11-10",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0009",
+    "name": "Diya Reddy",
+    "email": "diya.reddy@arhamfintech.com",
+    "designation": "Relationship Manager",
+    "department": "Wealth Management",
+    "role": "EMPLOYEE",
+    "joiningDate": "2022-08-17",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0010",
+    "name": "Myra Mehta",
+    "email": "myra.mehta@arhamfintech.com",
+    "designation": "Assistant Manager",
+    "department": "Retail Broking",
+    "role": "EMPLOYEE",
+    "joiningDate": "2021-09-01",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0011",
+    "name": "Atharv Pillai",
+    "email": "atharv.pillai@arhamfintech.com",
+    "designation": "Senior Relationship Manager",
+    "department": "Institutional Sales",
+    "role": "EMPLOYEE",
+    "joiningDate": "2020-09-16",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0012",
+    "name": "Simran Singh",
+    "email": "simran.singh@arhamfintech.com",
+    "designation": "Associate VP",
+    "department": "Institutional Sales",
+    "role": "EMPLOYEE",
+    "joiningDate": "2019-11-19",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0013",
+    "name": "Ananya Malhotra",
+    "email": "ananya.malhotra@arhamfintech.com",
+    "designation": "Senior Relationship Manager",
+    "department": "Wealth Management",
+    "role": "EMPLOYEE",
+    "joiningDate": "2019-03-15",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0014",
+    "name": "Kabir Menon",
+    "email": "kabir.menon@arhamfintech.com",
+    "designation": "Vice President",
+    "department": "HNI Desk",
+    "role": "EMPLOYEE",
+    "joiningDate": "2020-12-22",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0015",
+    "name": "Advait Pandey",
+    "email": "advait.pandey@arhamfintech.com",
+    "designation": "Senior Relationship Manager",
+    "department": "HNI Desk",
+    "role": "EMPLOYEE",
+    "joiningDate": "2025-01-25",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0016",
+    "name": "Anjali Reddy",
+    "email": "anjali.reddy@arhamfintech.com",
+    "designation": "Vice President",
+    "department": "HNI Desk",
+    "role": "EMPLOYEE",
+    "joiningDate": "2021-11-03",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0017",
+    "name": "Sara Pillai",
+    "email": "sara.pillai@arhamfintech.com",
+    "designation": "Associate VP",
+    "department": "HNI Desk",
+    "role": "EMPLOYEE",
+    "joiningDate": "2021-12-05",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0018",
+    "name": "Kabir Patel",
+    "email": "kabir.patel@arhamfintech.com",
+    "designation": "Relationship Manager",
+    "department": "HNI Desk",
+    "role": "EMPLOYEE",
+    "joiningDate": "2019-03-19",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0019",
+    "name": "Aadhya Gupta",
+    "email": "aadhya.gupta@arhamfintech.com",
+    "designation": "Assistant Manager",
+    "department": "Retail Broking",
+    "role": "EMPLOYEE",
+    "joiningDate": "2021-07-26",
+    "status": "ACTIVE"
+  },
+  {
+    "employeeId": "EMP0020",
+    "name": "Ishaan Rao",
+    "email": "ishaan.rao@arhamfintech.com",
+    "designation": "Senior Relationship Manager",
+    "department": "Retail Broking",
+    "role": "EMPLOYEE",
+    "joiningDate": "2019-02-16",
+    "status": "ACTIVE"
+  }
+]
