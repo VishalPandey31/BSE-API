@@ -71,14 +71,36 @@ app.get('/api/auth/employees', async (req, res) => {
     res.json({ data: employees });
 });
 
-// Debug endpoint — test sync directly
-app.get('/api/debug/sync', async (req, res) => {
+// Debug endpoint — lightweight ping to check what BSE URL is being used
+app.get('/api/debug/ping', async (req, res) => {
+    const nodeFetch = require('node-fetch');
+    const bseUrl = 'https://bse-api-njul.onrender.com';
+    const envUrl = process.env.BSE_API_URL || '(not set)';
     try {
-        const result = await syncInternal();
-        const employees = queryAll('SELECT employeeId, name FROM employees');
-        res.json({ status: 'ok', result, employeeCount: employees.length, bseUrl: process.env.BSE_API_URL || 'https://bse-api-njul.onrender.com (default)' });
+        const r = await nodeFetch(`${bseUrl}/api/internal/employees`, { timeout: 10000 });
+        const data = await r.json();
+        const empCount = queryOne('SELECT COUNT(*) as c FROM employees')?.c || 0;
+        res.json({ bseUrl, envUrl, bseStatus: r.status, bseEmployees: data.data?.length, dbEmployees: empCount, nodeVersion: process.version });
     } catch (err) {
-        res.json({ status: 'error', error: err.message, stack: err.stack, bseUrl: process.env.BSE_API_URL || 'https://bse-api-njul.onrender.com (default)' });
+        res.json({ bseUrl, envUrl, error: err.message, nodeVersion: process.version });
+    }
+});
+
+// Debug endpoint — quick sync (employees only)
+app.get('/api/debug/quicksync', async (req, res) => {
+    const nodeFetch = require('node-fetch');
+    try {
+        const r = await nodeFetch('https://bse-api-njul.onrender.com/api/internal/employees', { timeout: 15000 });
+        const data = await r.json();
+        for (const e of data.data) {
+            runSql(`INSERT OR REPLACE INTO employees (employeeId, name, email, designation, department, role, joiningDate, status, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))`,
+                [e.employeeId, e.name, e.email, e.designation, e.department, e.role, e.joiningDate, e.status]);
+        }
+        saveDb();
+        const count = queryOne('SELECT COUNT(*) as c FROM employees')?.c || 0;
+        res.json({ status: 'ok', synced: data.data.length, dbCount: count });
+    } catch (err) {
+        res.json({ status: 'error', error: err.message, stack: err.stack });
     }
 });
 
