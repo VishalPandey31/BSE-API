@@ -170,7 +170,7 @@ async function start() {
             } catch (err) {
                 console.warn('[KEEP-ALIVE] Ping failed:', err.message);
             }
-        }, 14 * 60 * 1000); // every 14 minutes
+        }, 10 * 60 * 1000); // every 10 minutes — well within Render's 15-min sleep threshold
     });
 }
 
