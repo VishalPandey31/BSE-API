@@ -157,6 +157,20 @@ async function start() {
     server.listen(PORT, () => {
         console.log(`\n🖥️  Internal Portal Backend running on http://localhost:${PORT}`);
         console.log(`   WebSocket ready for real-time updates\n`);
+
+        // Keep-alive: ping both Render servers every 14 min so neither goes to sleep
+        const SELF_URL = 'https://portal-backend-usfq.onrender.com';
+        const BSE_URL = 'https://bse-api-njul.onrender.com';
+        setInterval(async () => {
+            try {
+                const nodeFetch = require('node-fetch');
+                await nodeFetch(`${SELF_URL}/api/health`, { timeout: 10000 });
+                await nodeFetch(`${BSE_URL}/api/health`, { timeout: 10000 });
+                console.log('[KEEP-ALIVE] Both servers pinged OK');
+            } catch (err) {
+                console.warn('[KEEP-ALIVE] Ping failed:', err.message);
+            }
+        }, 14 * 60 * 1000); // every 14 minutes
     });
 }
 
