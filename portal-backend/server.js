@@ -74,7 +74,7 @@ app.get('/api/auth/employees', async (req, res) => {
 // Debug endpoint — lightweight ping to check what BSE URL is being used
 app.get('/api/debug/ping', async (req, res) => {
     const nodeFetch = require('node-fetch');
-    const bseUrl = process.env.BSE_API_URL || 'http://localhost:4000';
+    const bseUrl = process.env.BSE_API_URL || 'https://bse-api-mu2r.onrender.com';
     const envUrl = process.env.BSE_API_URL || '(not set)';
     try {
         const r = await nodeFetch(`${bseUrl}/api/internal/employees`, { timeout: 10000 });
@@ -89,7 +89,7 @@ app.get('/api/debug/ping', async (req, res) => {
 // Debug endpoint — quick sync (employees only)
 app.get('/api/debug/quicksync', async (req, res) => {
     const nodeFetch = require('node-fetch');
-    const bseUrl = process.env.BSE_API_URL || 'http://localhost:4000';
+    const bseUrl = process.env.BSE_API_URL || 'https://bse-api-mu2r.onrender.com';
     try {
         const r = await nodeFetch(`${bseUrl}/api/internal/employees`, { timeout: 15000 });
         const data = await r.json();
