@@ -16,18 +16,14 @@ router.post('/trigger', async (req, res) => {
     // Return immediately, sync runs in background
     res.json({ message: `Sync triggered for ${entity || 'all'}`, timestamp: new Date().toISOString() });
 
-    try {
-        if (entity === 'internal' || entity === 'all' || !entity) {
-            await syncInternal();
-        }
-        if (entity === 'clients' || entity === 'all' || !entity) {
-            syncClients(_io); // Don't await — runs in background
-        }
-        if (entity === 'trades' || entity === 'all' || !entity) {
-            syncTrades(_io); // Don't await — runs in background
-        }
-    } catch (err) {
-        console.error('[SYNC] Trigger error:', err.message);
+    if (entity === 'internal' || entity === 'all' || !entity) {
+        syncInternal().catch(err => console.error('[SYNC] Internal sync failed:', err.message));
+    }
+    if (entity === 'clients' || entity === 'all' || !entity) {
+        syncClients(_io).catch(err => console.error('[SYNC] Clients sync failed:', err.message));
+    }
+    if (entity === 'trades' || entity === 'all' || !entity) {
+        syncTrades(_io).catch(err => console.error('[SYNC] Trades sync failed:', err.message));
     }
 });
 

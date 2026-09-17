@@ -163,7 +163,7 @@ function generateEmployees(count) {
     employees.push({
       employeeId: `EMP${String(i).padStart(4, '0')}`,
       name: fullName,
-      email: `${firstName.toLowerCase()}.${lastName.toLowerCase()}@arhamfintech.com`,
+      email: `${firstName.toLowerCase()}.${lastName.toLowerCase()}@bseapisimulator.com`,
       designation: isManager ? randomElement(['VP', 'Director', 'Head of Sales']) : randomElement(designations),
       department: randomElement(departments),
       role: isManager ? 'MANAGEMENT' : 'EMPLOYEE',

@@ -74,7 +74,7 @@ app.get('/api/auth/employees', async (req, res) => {
 // Debug endpoint — lightweight ping to check what BSE URL is being used
 app.get('/api/debug/ping', async (req, res) => {
     const nodeFetch = require('node-fetch');
-    const bseUrl = 'https://bse-api-njul.onrender.com';
+    const bseUrl = process.env.BSE_API_URL || 'http://localhost:4000';
     const envUrl = process.env.BSE_API_URL || '(not set)';
     try {
         const r = await nodeFetch(`${bseUrl}/api/internal/employees`, { timeout: 10000 });
@@ -89,8 +89,9 @@ app.get('/api/debug/ping', async (req, res) => {
 // Debug endpoint — quick sync (employees only)
 app.get('/api/debug/quicksync', async (req, res) => {
     const nodeFetch = require('node-fetch');
+    const bseUrl = process.env.BSE_API_URL || 'http://localhost:4000';
     try {
-        const r = await nodeFetch('https://bse-api-njul.onrender.com/api/internal/employees', { timeout: 15000 });
+        const r = await nodeFetch(`${bseUrl}/api/internal/employees`, { timeout: 15000 });
         const data = await r.json();
         for (const e of data.data) {
             runSql(`INSERT OR REPLACE INTO employees (employeeId, name, email, designation, department, role, joiningDate, status, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))`,
@@ -158,19 +159,21 @@ async function start() {
         console.log(`\n🖥️  Internal Portal Backend running on http://localhost:${PORT}`);
         console.log(`   WebSocket ready for real-time updates\n`);
 
-        // Keep-alive: ping both Render servers every 14 min so neither goes to sleep
-        const SELF_URL = 'https://portal-backend-usfq.onrender.com';
-        const BSE_URL = 'https://bse-api-njul.onrender.com';
-        setInterval(async () => {
-            try {
-                const nodeFetch = require('node-fetch');
-                await nodeFetch(`${SELF_URL}/api/health`, { timeout: 10000 });
-                await nodeFetch(`${BSE_URL}/api/health`, { timeout: 10000 });
-                console.log('[KEEP-ALIVE] Both servers pinged OK');
-            } catch (err) {
-                console.warn('[KEEP-ALIVE] Ping failed:', err.message);
-            }
-        }, 10 * 60 * 1000); // every 10 minutes — well within Render's 15-min sleep threshold
+        // Keep-alive: only run if SELF_URL and BSE_URL are explicitly configured
+        const SELF_URL = process.env.SELF_URL;
+        const BSE_URL = process.env.BSE_API_URL;
+        if (SELF_URL && BSE_URL) {
+            setInterval(async () => {
+                try {
+                    const nodeFetch = require('node-fetch');
+                    await nodeFetch(`${SELF_URL}/api/health`, { timeout: 10000 });
+                    await nodeFetch(`${BSE_URL}/api/health`, { timeout: 10000 });
+                    console.log('[KEEP-ALIVE] Both servers pinged OK');
+                } catch (err) {
+                    console.warn('[KEEP-ALIVE] Ping failed:', err.message);
+                }
+            }, 10 * 60 * 1000);
+        }
     });
 }
 

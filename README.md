@@ -1,4 +1,4 @@
-# 🏦 Arham Fintech — Internal Operations Portal
+﻿# 🏦 BSE API SIMULATOR — Internal Operations Portal
 
 > **Technical Assessment** · Stock Broking Internal Operations Portal with Mock BSE API Simulator
 
@@ -332,6 +332,6 @@ At 25,000 clients and 500,000 trades:
 
 <div align="center">
 
-**Built for Arham Fintech Private Limited** · Technical Assessment
+**Built for BSE API SIMULATOR** · Technical Assessment
 
 </div>

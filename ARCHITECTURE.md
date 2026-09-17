@@ -1,4 +1,4 @@
-# Architecture Document — Arham Fintech Internal Operations Portal
+﻿# Architecture Document — BSE API SIMULATOR Internal Operations Portal
 
 ## System Overview
 

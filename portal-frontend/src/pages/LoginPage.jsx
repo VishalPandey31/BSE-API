@@ -46,7 +46,7 @@ export default function LoginPage({ onLogin }) {
   return (
     <div className="login-page">
       <div className="login-card">
-        <h1>Arham Fintech</h1>
+        <h1>BSE API SIMULATOR</h1>
         <p className="subtitle">Internal Operations Portal</p>
 
         <label className="login-label">Select your profile to continue</label>

@@ -75,7 +75,7 @@ function Sidebar({ user, onLogout }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h1>Arham Fintech</h1>
+        <h1>BSE API SIMULATOR</h1>
         <p>Internal Operations</p>
       </div>
 

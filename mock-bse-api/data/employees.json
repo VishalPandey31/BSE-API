@@ -2,7 +2,7 @@
   {
     "employeeId": "EMP0001",
     "name": "Deepak Patel",
-    "email": "deepak.patel@arhamfintech.com",
+    "email": "deepak.patel@bseapisimulator.com",
     "designation": "Head of Sales",
     "department": "HNI Desk",
     "role": "MANAGEMENT",
@@ -12,7 +12,7 @@
   {
     "employeeId": "EMP0002",
     "name": "Neha Sharma",
-    "email": "neha.sharma@arhamfintech.com",
+    "email": "neha.sharma@bseapisimulator.com",
     "designation": "VP",
     "department": "Wealth Management",
     "role": "MANAGEMENT",
@@ -22,7 +22,7 @@
   {
     "employeeId": "EMP0003",
     "name": "Aadhya Malhotra",
-    "email": "aadhya.malhotra@arhamfintech.com",
+    "email": "aadhya.malhotra@bseapisimulator.com",
     "designation": "Director",
     "department": "Wealth Management",
     "role": "MANAGEMENT",
@@ -32,7 +32,7 @@
   {
     "employeeId": "EMP0004",
     "name": "Krishna Goel",
-    "email": "krishna.goel@arhamfintech.com",
+    "email": "krishna.goel@bseapisimulator.com",
     "designation": "Associate VP",
     "department": "HNI Desk",
     "role": "EMPLOYEE",
@@ -42,7 +42,7 @@
   {
     "employeeId": "EMP0005",
     "name": "Parth Sharma",
-    "email": "parth.sharma@arhamfintech.com",
+    "email": "parth.sharma@bseapisimulator.com",
     "designation": "Associate VP",
     "department": "Institutional Sales",
     "role": "EMPLOYEE",
@@ -52,7 +52,7 @@
   {
     "employeeId": "EMP0006",
     "name": "Neel Dubey",
-    "email": "neel.dubey@arhamfintech.com",
+    "email": "neel.dubey@bseapisimulator.com",
     "designation": "Relationship Manager",
     "department": "Institutional Sales",
     "role": "EMPLOYEE",
@@ -62,7 +62,7 @@
   {
     "employeeId": "EMP0007",
     "name": "Shaurya Verma",
-    "email": "shaurya.verma@arhamfintech.com",
+    "email": "shaurya.verma@bseapisimulator.com",
     "designation": "Relationship Manager",
     "department": "Institutional Sales",
     "role": "EMPLOYEE",
@@ -72,7 +72,7 @@
   {
     "employeeId": "EMP0008",
     "name": "Rohan Malhotra",
-    "email": "rohan.malhotra@arhamfintech.com",
+    "email": "rohan.malhotra@bseapisimulator.com",
     "designation": "Vice President",
     "department": "Wealth Management",
     "role": "EMPLOYEE",
@@ -82,7 +82,7 @@
   {
     "employeeId": "EMP0009",
     "name": "Diya Reddy",
-    "email": "diya.reddy@arhamfintech.com",
+    "email": "diya.reddy@bseapisimulator.com",
     "designation": "Relationship Manager",
     "department": "Wealth Management",
     "role": "EMPLOYEE",
@@ -92,7 +92,7 @@
   {
     "employeeId": "EMP0010",
     "name": "Myra Mehta",
-    "email": "myra.mehta@arhamfintech.com",
+    "email": "myra.mehta@bseapisimulator.com",
     "designation": "Assistant Manager",
     "department": "Retail Broking",
     "role": "EMPLOYEE",
@@ -102,7 +102,7 @@
   {
     "employeeId": "EMP0011",
     "name": "Atharv Pillai",
-    "email": "atharv.pillai@arhamfintech.com",
+    "email": "atharv.pillai@bseapisimulator.com",
     "designation": "Senior Relationship Manager",
     "department": "Institutional Sales",
     "role": "EMPLOYEE",
@@ -112,7 +112,7 @@
   {
     "employeeId": "EMP0012",
     "name": "Simran Singh",
-    "email": "simran.singh@arhamfintech.com",
+    "email": "simran.singh@bseapisimulator.com",
     "designation": "Associate VP",
     "department": "Institutional Sales",
     "role": "EMPLOYEE",
@@ -122,7 +122,7 @@
   {
     "employeeId": "EMP0013",
     "name": "Ananya Malhotra",
-    "email": "ananya.malhotra@arhamfintech.com",
+    "email": "ananya.malhotra@bseapisimulator.com",
     "designation": "Senior Relationship Manager",
     "department": "Wealth Management",
     "role": "EMPLOYEE",
@@ -132,7 +132,7 @@
   {
     "employeeId": "EMP0014",
     "name": "Kabir Menon",
-    "email": "kabir.menon@arhamfintech.com",
+    "email": "kabir.menon@bseapisimulator.com",
     "designation": "Vice President",
     "department": "HNI Desk",
     "role": "EMPLOYEE",
@@ -142,7 +142,7 @@
   {
     "employeeId": "EMP0015",
     "name": "Advait Pandey",
-    "email": "advait.pandey@arhamfintech.com",
+    "email": "advait.pandey@bseapisimulator.com",
     "designation": "Senior Relationship Manager",
     "department": "HNI Desk",
     "role": "EMPLOYEE",
@@ -152,7 +152,7 @@
   {
     "employeeId": "EMP0016",
     "name": "Anjali Reddy",
-    "email": "anjali.reddy@arhamfintech.com",
+    "email": "anjali.reddy@bseapisimulator.com",
     "designation": "Vice President",
     "department": "HNI Desk",
     "role": "EMPLOYEE",
@@ -162,7 +162,7 @@
   {
     "employeeId": "EMP0017",
     "name": "Sara Pillai",
-    "email": "sara.pillai@arhamfintech.com",
+    "email": "sara.pillai@bseapisimulator.com",
     "designation": "Associate VP",
     "department": "HNI Desk",
     "role": "EMPLOYEE",
@@ -172,7 +172,7 @@
   {
     "employeeId": "EMP0018",
     "name": "Kabir Patel",
-    "email": "kabir.patel@arhamfintech.com",
+    "email": "kabir.patel@bseapisimulator.com",
     "designation": "Relationship Manager",
     "department": "HNI Desk",
     "role": "EMPLOYEE",
@@ -182,7 +182,7 @@
   {
     "employeeId": "EMP0019",
     "name": "Aadhya Gupta",
-    "email": "aadhya.gupta@arhamfintech.com",
+    "email": "aadhya.gupta@bseapisimulator.com",
     "designation": "Assistant Manager",
     "department": "Retail Broking",
     "role": "EMPLOYEE",
@@ -192,7 +192,7 @@
   {
     "employeeId": "EMP0020",
     "name": "Ishaan Rao",
-    "email": "ishaan.rao@arhamfintech.com",
+    "email": "ishaan.rao@bseapisimulator.com",
     "designation": "Senior Relationship Manager",
     "department": "Retail Broking",
     "role": "EMPLOYEE",

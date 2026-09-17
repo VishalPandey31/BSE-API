@@ -1,7 +1,7 @@
 const nodeFetch = require('node-fetch');
 const { getDb, queryAll, queryOne, runSql, saveDb } = require('../db');
 
-const BSE_BASE_URL = 'https://bse-api-njul.onrender.com';
+const BSE_BASE_URL = process.env.BSE_API_URL || 'http://localhost:4000';
 
 let syncInProgress = { clients: false, trades: false };
 

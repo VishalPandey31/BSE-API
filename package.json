@@ -1,0 +1,12 @@
+{
+  "name": "bse-api-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stock Broking Internal Operations Portal with Mock BSE API Simulator",
+  "scripts": {
+    "start": "start-local.bat",
+    "bse": "npm --prefix mock-bse-api start",
+    "backend": "npm --prefix portal-backend start",
+    "frontend": "npm --prefix portal-frontend run dev"
+  }
+}

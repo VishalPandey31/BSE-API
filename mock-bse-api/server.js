@@ -23,7 +23,8 @@ function loadData(file) {
         console.error(`Data file missing: ${filePath}. Run "npm run seed" first.`);
         return [];
     }
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const content = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(content.replace(/^\uFEFF/, ''));
 }
 
 let clients = loadData('clients.json');
