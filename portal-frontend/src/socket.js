@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const BACKEND_URL = import.meta.env.VITE_WS_URL || 'http://localhost:3001';
+const BACKEND_URL = import.meta.env.VITE_WS_URL || 'https://bse-api-1.onrender.com';
 
 const socket = io(BACKEND_URL, {
     transports: ['websocket', 'polling'],
